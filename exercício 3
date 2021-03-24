@@ -1,0 +1,23 @@
+//3. Faça um programa em C# que calcule a média de 3 números dados pelo usuário
+
+        static void Main(string[] args)
+        {
+            double num1, num2, num3;
+            double soma;
+            double media;
+
+            Console.WriteLine("Digite o primeiro número: ");
+            num1 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o segundo número: ");
+            num2 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o terceiro número: ");
+            num3 = double.Parse(Console.ReadLine());
+
+            soma = num1 + num2 + num3;
+            media = soma / 3;
+
+            Console.WriteLine("A média dos três números é: " + soma, media);
+
+        }
+    }
+}
