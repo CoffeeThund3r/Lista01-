@@ -1,0 +1,30 @@
+// 4. Faça um programa em C# que calcule a verificação se o numero é divisível por 3 e 5 ao mesmo tempo.
+
+        static void Main(string[] args)
+        {
+            int numero;
+
+            Console.WriteLine("Digite um número: ");
+            numero = int.Parse(Console.ReadLine());
+            
+            if (((numero % 3) == 0) && ((numero % 5) == 0))
+            {
+                Console.WriteLine("O número " + numero + " é divisivel por 3 e 5");
+            }
+            else
+            {
+                if ((numero % 3) == 0)
+                {
+                    Console.WriteLine("O número " + numero + " é divisivel por 3");
+                }
+                else
+                {
+                    if ((numero % 5) == 0)
+                    {
+                        Console.WriteLine("O número " + numero + " é divisivel por 5");
+                    }
+                }
+            }
+        }
+    }
+}
