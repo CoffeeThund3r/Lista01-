@@ -1,0 +1,33 @@
+ // 2. Faça um programa em C# que mostre a soma e o produto de dois números dados pelo usuário.
+
+        static void Main(string[] args)
+        {
+            string entradaNumeroUm;
+            string entradaNumeroDois;
+
+            double numeroUm;
+            double numeroDois;
+
+            double produto;
+            double soma;
+
+
+            Console.WriteLine("--- Soma e Produto entre dois números ---");
+           
+            Console.WriteLine("Digite o primeiro número: ");
+            entradaNumeroUm = Console.ReadLine();
+           
+            Console.WriteLine("Digite o segundo número: ");
+            entradaNumeroDois = Console.ReadLine();
+
+            numeroUm = Convert.ToDouble(entradaNumeroUm);
+            numeroDois = Convert.ToDouble(entradaNumeroDois);
+
+            produto = numeroUm * numeroDois;
+            soma = numeroUm + numeroDois;
+
+            Console.WriteLine($"O produto de {numeroUm} e {numeroDois} é {produto}");
+            Console.WriteLine($"A soma de {numeroUm} e {numeroDois} é {soma}");
+        }
+    }
+}
